@@ -9,3 +9,14 @@
     margin: 0;
 }
 
+ 
+
+  html, body {
+  overflow-x: hidden;
+  }
+
+/* @media (max-width: 800px) {
+  html, body {
+  overflow-x: hidden;
+  }
+} */

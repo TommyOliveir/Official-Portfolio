@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 
 function Hero() {
   return (
-    <section className=" h-screen flex flex-col sm:flex-row justify-end  ">
+    <section className=" bg-pink-200 h-screen flex flex-col sm:flex-row justify-end  ">
 
     <div id="socials-image" className=" sm:flex items-center  sm:w-1/2">
 
-      <div className="social-images  invisible sm:visible ">
+      <div className="social-images invisible sm:visible ">
         
-        <ul border className="border border-purple-500 flex sm:flex-col justify-center gap-9 sm:gap-1 ">
+        <ul border className="border border-purple-500 flex sm:flex-col justify-center gap-9 sm:gap-1 m-0 ">
           <li className='text-5xl'> <i class="ri-linkedin-box-fill" ></i></li>
           <li className='text-5xl'> <i class="ri-github-fill"></i></li>
           <li className='text-5xl'> <i class="ri-github-fill"></i></li>
