@@ -13,7 +13,7 @@ export default function Header() {
       <Link className="site-logo text-white tracking-wider font-bold"  to="/">
         Tommy
       </Link>
-      <nav className="flex gap-8 invisible sm:visible mr-32 text-xl">
+      <nav className="flex gap-8 invisible sm:visible  text-xl">
         <NavLink
           to="/"
           style={({ isActive }) => (isActive ? activeStyles : null)}
