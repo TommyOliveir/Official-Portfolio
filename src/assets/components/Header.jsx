@@ -9,11 +9,17 @@ export default function Header() {
   };
 
   return (
-    <header className="flex justify-between p-4 bg-orange-400">
+    <header className="flex justify-between p-8 bg-orange-400">
       <Link className="site-logo text-white tracking-wider font-bold"  to="/">
         Tommy
       </Link>
-      <nav className="flex gap-4 invisible sm:visible mr-32">
+      <nav className="flex gap-8 invisible sm:visible mr-32 text-xl">
+        <NavLink
+          to="/"
+          style={({ isActive }) => (isActive ? activeStyles : null)}
+        >
+        Home
+        </NavLink>
         <NavLink
           to="/"
           style={({ isActive }) => (isActive ? activeStyles : null)}
@@ -30,7 +36,7 @@ export default function Header() {
           to="/"
           style={({ isActive }) => (isActive ? activeStyles : null)}
         >
-          Projects
+          Contact
         </NavLink>
       </nav>
     </header>
