@@ -4,19 +4,20 @@ import { Link } from "react-router-dom";
 
 function Hero() {
   return (
-    <section className="bg-red-200 h-screen flex flex-col sm:flex-row justify-end  ">
+    <section className=" h-screen flex flex-col sm:flex-row justify-end  ">
 
-    <div id="socials-image" className=" border sm:flex items-center  border-red-600 sm:w-1/2">
+    <div id="socials-image" className=" sm:flex items-center  sm:w-1/2">
 
       <div className="social-images  invisible sm:visible ">
         
         <ul border className="border border-purple-500 flex sm:flex-col justify-center gap-9 sm:gap-1 ">
           <li className='text-5xl'> <i class="ri-linkedin-box-fill" ></i></li>
           <li className='text-5xl'> <i class="ri-github-fill"></i></li>
+          <li className='text-5xl'> <i class="ri-github-fill"></i></li>
         </ul>
       </div>
 
-      <div className="image border m-auto justify-center border-green-500 w-2/3 sm:w-1/2" >
+      <div className="image  m-auto justify-center  w-2/3 sm:w-1/2" >
       <img src="Tommyboo.png" alt="" />
       </div>
     </div>
@@ -35,7 +36,7 @@ function Hero() {
           <h2 className="text-xl  tracking-wide text-gray-700 uppercase mt-4 xl:text-2xl">
             Front-End React Developer
           </h2>
-          <div className="bg-red-300">
+          <div className="links">
             <Link
               className="block sm:inline-block xl:text-lg mt-12 py-2 px-4 rounded bg-white text-orange-400 border-solid border border-orange-400 sm:w-40 text-center
           hover:border-orange-400
@@ -46,7 +47,7 @@ function Hero() {
               See Projects
             </Link>
             <Link
-              className="block sm:inline-block ml-8 xl:text-lg mt-8  py-2 px-4 rounded bg-orange-400 text-white border-solid border border-orange-400 sm:w-40 text-center
+              className="block sm:inline-block sm:ml-8 xl:text-lg mt-8  py-2 px-4 rounded bg-orange-400 text-white border-solid border border-orange-400  sm:w-40 text-center
           hover:border-orange-400 
           hover:text-orange-400
           hover:bg-white"
