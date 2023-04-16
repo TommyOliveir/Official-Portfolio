@@ -4,33 +4,33 @@ import { Link } from "react-router-dom";
 
 function Hero() {
   return (
-    <section className=" bg-pink-200 h-screen flex flex-col sm:flex-row justify-end  ">
+    <section className="w-full  flex flex-col sm:flex-row justify-end  ">
 
-    <div id="socials-image" className=" sm:flex items-center  sm:w-1/2">
+    <div id="socials-image" className="w-full sm:flex items-center  sm:w-1/2">
 
       <div className="social-images invisible sm:visible ">
         
-        <ul border className="border border-purple-500 flex sm:flex-col justify-center gap-9 sm:gap-1 m-0 ">
+        <ul border className=" flex sm:flex-col justify-center gap-9 sm:gap-1 m-0 ">
           <li className='text-5xl'> <i class="ri-linkedin-box-fill" ></i></li>
           <li className='text-5xl'> <i class="ri-github-fill"></i></li>
           <li className='text-5xl'> <i class="ri-github-fill"></i></li>
         </ul>
       </div>
 
-      <div className="image  m-auto justify-center  w-2/3 sm:w-1/2" >
-      <img src="Tommyboo.png" alt="" />
+      <div className="image m-auto justify-center  w-2/3 sm:w-1/2" >
+      <img className="" src="Tommyboo.png" alt="" />
       </div>
     </div>
-    <div className="w-screen sm:w-1/2 ">
-      <div className="bg-white px-4 sm:pl-4 pt-16 sm:pt-40  ">
+    <div id="hero-details" className="w-full sm:w-1/2 ">
+      <div className=" px-4 sm:pl-4 pt-16 sm:pt-40  ">
         <div>
-          <h1 className=" text-4xl font-semibold text-gray-800 xl:text-5xl  ">
+          <h1 className="m-0 text-4xl font-semibold text-gray-800 xl:text-5xl  ">
             Hi, I am{" "}
             <span className="text-orange-400  font-bold uppercase">
               Tommy
             </span>
           </h1>
-          <h1 className="text-4xl mt-4 font-bold text-gray-800 xl:text-5xl  ">
+          <h1 className=" text-4xl mt-4 font-bold text-gray-800 xl:text-5xl  ">
             I build value through design.
           </h1>
           <h2 className="text-xl  tracking-wide text-gray-700 uppercase mt-4 xl:text-2xl">
