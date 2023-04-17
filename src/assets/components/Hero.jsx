@@ -10,7 +10,7 @@ function Hero() {
 
       <div className="social-images invisible sm:visible ">
         
-        <ul border className=" flex sm:flex-col justify-center gap-9 sm:gap-1 m-0 ">
+        <ul border className="pl-4 flex sm:flex-col justify-center gap-9 sm:gap-1 m-0 ">
           <li className='text-5xl'> <i class="ri-linkedin-box-fill" ></i></li>
           <li className='text-5xl'> <i class="ri-github-fill"></i></li>
           <li className='text-5xl'> <i class="ri-github-fill"></i></li>

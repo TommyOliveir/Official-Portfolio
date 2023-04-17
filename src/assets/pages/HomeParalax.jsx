@@ -6,6 +6,7 @@ import About from "../components/About";
 function HomeParalax() {
   return (
     <>
+    
     <Hero/>
     <About/>
     </>
