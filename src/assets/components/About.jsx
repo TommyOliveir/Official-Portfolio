@@ -4,7 +4,7 @@ import YouTubeVideo from "./YouTubeVideo";
 function About() {
   const [isOpen, setOpen] = useState(false);
   return (
-    <section className="px-4 py-6 border-4 border-red-400 text-white bg-orange-400 mt-4 sm:mt-0 ">
+    <section className="px-4 py-6 border-4 border-red-400 text-white bg-orange-300 mt-4 sm:mt-0 ">
       <div className="flex flex-col sm:flex-row border border-red-900 sm:items-center cursor-pointer">
         <div className="sm:w-1/2 border border-red-900 sm:p-16">
           <h1 className="text-4xl xl:text-5xl font-bold ">Nice to meet you</h1>

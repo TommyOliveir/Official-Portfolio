@@ -41,7 +41,7 @@ function Hero() {
             <div>
               <h1 className="m-0 text-4xl font-semibold text-gray-800 xl:text-5xl  ">
                 Hi, I am{" "}
-                <span className="text-orange-400  font-bold uppercase">
+                <span className="text-orange-300  font-bold uppercase">
                   Tommy
                 </span>
               </h1>
@@ -53,18 +53,18 @@ function Hero() {
               </h2>
               <div className="links">
                 <Link
-                  className="block sm:inline-block xl:text-lg mt-12 py-2 px-4 rounded bg-white text-orange-400 border-solid border border-orange-400 sm:w-40 text-center
-          hover:border-orange-400
+                  className="block sm:inline-block xl:text-lg mt-12 py-2 px-4 rounded bg-white text-orange-300 border-solid border border-orange-300 sm:w-40 text-center
+          hover:border-orange-300
           hover:text-white
-          hover:bg-orange-400"
+          hover:bg-orange-300"
                   to="/"
                 >
                   See Projects
                 </Link>
                 <Link
-                  className="block sm:inline-block sm:ml-8 xl:text-lg mt-8  py-2 px-4 rounded bg-orange-400 text-white border-solid border border-orange-400  sm:w-40 text-center
-          hover:border-orange-400 
-          hover:text-orange-400
+                  className="block sm:inline-block sm:ml-8 xl:text-lg mt-8  py-2 px-4 rounded bg-orange-300 text-white border-solid border border-orange-300  sm:w-40 text-center
+          hover:border-orange-300 
+          hover:text-orange-300
           hover:bg-white"
                   to="/"
                 >
