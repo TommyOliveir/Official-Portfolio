@@ -21,7 +21,7 @@ function About() {
         </div>
 
         <div id="video" className="relative border border-red-900 mt-8 sm:mt-0 sm:w-1/2">
-          <h2 className="hover:text-xl hover:bg-red-400 transition-all hover:ease-in absolute left-40 top-1/3 ">
+          <h2 className="text-xl hover:text-xl hover:bg-red-400 transition-all hover:ease-in absolute left-5 sm:left-40 top-1/3 ">
             Play video
           </h2>
           <img
