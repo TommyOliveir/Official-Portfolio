@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
+import YouTubeVideo from "./YouTubeVideo";
 
 function About() {
+  const [isOpen, setOpen] = useState(false);
   return (
     <section className="px-4 py-6 border-4 border-red-400 text-white bg-orange-400 mt-4 sm:mt-0 ">
       <div className="flex flex-col sm:flex-row border border-red-900 sm:items-center cursor-pointer">
@@ -20,7 +22,10 @@ function About() {
           </h4>
         </div>
 
-        <div id="video" className="relative border border-red-900 mt-8 sm:mt-0 sm:w-1/2">
+        <div
+          id="video"
+          className="relative border border-red-900 mt-8 sm:mt-0 sm:w-1/2"
+        >
           <h2 className="text-xl hover:text-xl hover:bg-red-400 transition-all hover:ease-in absolute left-5 sm:left-40 top-1/3 ">
             Play video
           </h2>
@@ -30,6 +35,12 @@ function About() {
             alt=""
           />
         </div>
+      </div>
+      <div className="modal hidden fixed bg-gray-900 left-0 top-0  h-screen w-full opacity-50">
+      <div className="video">
+        modal video
+       <YouTubeVideo/>
+      </div>
       </div>
     </section>
   );
