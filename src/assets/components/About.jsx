@@ -27,9 +27,9 @@ function About() {
           className="relative border border-red-900 mt-8 sm:mt-0 sm:w-1/2"
          
         >
-          <button onClick={() => setModalOpen(true)} className="text-xl hover:text-xl hover:bg-red-400 transition-all hover:ease-in absolute left-5 sm:left-40 top-1/3 ">
+          {/* <button onClick={() => setModalOpen(true)} className="text-xl hover:text-xl hover:bg-red-400 transition-all hover:ease-in absolute left-5 sm:left-40 top-1/3 ">
             Play video
-          </button>
+          </button> */}
  
           <img
            onClick={() => setModalOpen(true)}
@@ -42,7 +42,7 @@ function About() {
       <div className={`${isModalOpen ? "" : "hidden"} modal  fixed bg-gray-900 left-0 top-0 pt-44 sm:pt-4 h-screen w-full `}>
         <div className="video w-full min-h-fit sm:p-16 sm:h-screen sm:w-4/5 sm:m-auto p-3 flex flex-col items-end">
           <button onClick={() => setModalOpen(false)} className="border border-red-800 px-4 py-2 mb-2"> close </button>
-          <YouTubeVideo />
+          <YouTubeVideo isModalOpen={isModalOpen} />
         </div>
       </div>
     </section>
