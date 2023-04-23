@@ -9,13 +9,24 @@ export const projectsData = [
     "description":"gfgfgfgfgg"
 } , 
     {
-        "id":"", 
-        "name":"Tod", 
+        "id":"3", 
+        "name":"Typing Game", 
     "description":"gfgfgfgfgg" 
 } , 
     {
-        "id":"", 
+        "id":"4", 
         "name":"Todo", 
     "description":"gfgfgfgfgg"
+}   , 
+{
+    "id":"5", 
+    "name":"Tenzies", 
+"description":"gfgfgfgfgg"
 }  
+, 
+{
+    "id":"6", 
+    "name":"Basketball Score Board", 
+"description":"gfgfgfgfgg"
+}
 ]  
