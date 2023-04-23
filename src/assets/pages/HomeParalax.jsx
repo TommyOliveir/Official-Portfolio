@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Skills from "../components/Skills";
+import Projects from "../components/Projects";
 
 function HomeParalax() {
   return (
@@ -11,6 +12,7 @@ function HomeParalax() {
     <Hero/>
     <About/>
     <Skills/>
+    <Projects/>
     </>
   );
 }
