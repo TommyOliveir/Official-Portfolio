@@ -4,7 +4,7 @@ import { projectsData } from "../../projectsData";
 
 function Projects() {
   const displayProjects = projectsData.map(data => {
-       return   <ProjectListCard name={data.name} /> 
+       return   <ProjectListCard name={data.name} description={data.description}/> 
     })
   return (
     <section className="py-16">

@@ -6,17 +6,17 @@ export const projectsData = [
     {
         "id":"2", 
         "name":"Vans Life", 
-    "description":"gfgfgfgfgg"
+    "description":"gfgfggnjj"
 } , 
     {
         "id":"3", 
         "name":"Typing Game", 
-    "description":"gfgfgfgfgg" 
+    "description":"gfuyyyfgfgg" 
 } , 
     {
         "id":"4", 
         "name":"Todo", 
-    "description":"gfgfgfgfgg"
+    "description":"nmklaaagfgfggj  fgfgffgfg jjjjjjjjjjjjj fff  fff f  ff ff  fff  fff  f   ff  fjjhjjjjjjjjjj"
 }   , 
 {
     "id":"5", 
