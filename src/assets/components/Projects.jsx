@@ -1,10 +1,10 @@
 import React from "react";
-import ProjectDetail from "./ProjectDetail";
+import ProjectListCard from "./ProjectListCard";
 import { projectsData } from "../../projectsData";
 
 function Projects() {
   const displayProjects = projectsData.map(data => {
-       return   <ProjectDetail name={data.name} /> 
+       return   <ProjectListCard name={data.name} /> 
     })
   return (
     <section className="py-16">
