@@ -5,6 +5,7 @@ import About from "../components/About";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Footer from "../components/Footer";
+import Contact from "../components/Contact";
 
 function HomeParalax() {
   return (
@@ -14,6 +15,7 @@ function HomeParalax() {
     <About/>
     <Skills/>
     <Projects/>
+    <Contact/>
     <Footer/>
     </>
   );
