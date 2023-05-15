@@ -1,6 +1,18 @@
-import React from "react";
+import React, {useState} from "react";
 
 function Contact() {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "", 
+    message: ""
+  })
+
+  function handleFormChange() {
+    
+  }
+
+
   return (
     <section className="p-4">
       <div >
@@ -15,7 +27,7 @@ function Contact() {
                 First Name
               </label>
               <input
-                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="grid-first-name"
                 type="text"
                 placeholder="Jane"
@@ -70,16 +82,13 @@ function Contact() {
                 class=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
                 id="message"
               ></textarea>
-              <p class="text-gray-600 text-xs italic">
-                Re-size can be disabled by set by resize-none / resize-y /
-                resize-x / resize
-              </p>
+             
             </div>
           </div>
           <div class="md:flex md:items-center">
             <div class="md:w-1/3">
               <button
-                class="shadow bg-orange-300 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                class="bg-orange-300 hover:bg-white hover:text-orange-300 border border-solid border border-orange-300 hover:border-orange-300  text-white  py-2 px-4 rounded"
                 type="button"
               >
                 Send

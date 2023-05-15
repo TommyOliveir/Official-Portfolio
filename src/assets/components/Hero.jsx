@@ -4,10 +4,7 @@ import { Link } from "react-router-dom";
 function Hero() {
   return (
     <section className="w-full">
-
-   
-    <div className=" flex flex-col sm:flex-row justify-end  ">
-   
+      <div className=" flex flex-col sm:flex-row justify-end  ">
         <div
           id="socials-image"
           className="w-full sm:flex items-center  sm:w-1/2"
@@ -18,16 +15,16 @@ function Hero() {
               className="pl-4 flex sm:flex-col justify-center gap-9 sm:gap-1 m-0 "
             >
               <li className="text-5xl">
-                {" "}
-                <i class="ri-linkedin-box-fill"></i>
+                <a href="https://www.linkedin.com/in/tommy-oliveir-larida/" target="_blank" >
+                  {" "}
+                  <i class="ri-linkedin-box-fill"></i>
+                </a>
               </li>
               <li className="text-5xl">
-                {" "}
-                <i class="ri-github-fill"></i>
-              </li>
-              <li className="text-5xl">
-                {" "}
-                <i class="ri-github-fill"></i>
+                <a href="https://github.com/TommyOliveir" target="_blank">
+                  {" "}
+                  <i class="ri-github-fill"></i>
+                </a>
               </li>
             </ul>
           </div>
@@ -74,8 +71,7 @@ function Hero() {
             </div>
           </div>
         </div>
-     
-    </div>
+      </div>
     </section>
   );
 }
