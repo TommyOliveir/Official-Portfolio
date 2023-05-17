@@ -10,6 +10,7 @@ import "./App.css";
 import Layout from "./assets/components/Layout";
 import HomeParalax from "./assets/pages/HomeParalax";
 
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>

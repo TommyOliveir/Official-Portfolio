@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function Hero() {
+
+  
   return (
     <section className="w-full">
       <div className=" flex flex-col sm:flex-row justify-end  ">
@@ -14,24 +17,40 @@ function Hero() {
               border
               className="pl-4 flex sm:flex-col justify-center gap-9 sm:gap-1 m-0 "
             >
-              <li className="text-5xl">
-                <a href="https://www.linkedin.com/in/tommy-oliveir-larida/" target="_blank" >
+              <motion.li
+               
+                className="text-5xl"
+              >
+                <motion.a
+                  href="https://www.linkedin.com/in/tommy-oliveir-larida/"
+                  target="_blank"
+                >
                   {" "}
                   <i class="ri-linkedin-box-fill"></i>
-                </a>
-              </li>
-              <li className="text-5xl">
+                </motion.a>
+              </motion.li>
+
+              <motion.li
+              
+              
+                className="text-5xl"
+              >
                 <a href="https://github.com/TommyOliveir" target="_blank">
                   {" "}
                   <i class="ri-github-fill"></i>
                 </a>
-              </li>
+              </motion.li>
             </ul>
           </div>
 
-          <div className="image m-auto justify-center  w-2/3 sm:w-1/2">
+          <motion.div
+            initial={{ x: -100 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 1 }}
+            className="image m-auto justify-center  w-2/3 sm:w-1/2"
+          >
             <img className="" src="Tommyboo.png" alt="" />
-          </div>
+          </motion.div>
         </div>
         <div id="hero-details" className="w-full sm:w-1/2 ">
           <div className=" px-4 sm:pl-4 pt-16 sm:pt-40  ">
