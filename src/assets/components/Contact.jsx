@@ -14,7 +14,7 @@ function Contact() {
 
 
   return (
-    <section className="p-4">
+    <section className="px-4 py-20 ">
       <div >
       
         <form class="w-full max-w-lg mx-auto">
@@ -30,7 +30,7 @@ function Contact() {
                 class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="grid-first-name"
                 type="text"
-                placeholder="Jane"
+               
               />
               <p class="text-red-500 text-xs italic">
                 Please fill out this field.
@@ -47,7 +47,7 @@ function Contact() {
                 class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="grid-last-name"
                 type="text"
-                placeholder="Doe"
+                
               />
             </div>
           </div>
@@ -88,7 +88,7 @@ function Contact() {
           <div class="md:flex md:items-center">
             <div class="md:w-1/3">
               <button
-                class="bg-orange-300 hover:bg-white hover:text-orange-300 border border-solid border border-orange-300 hover:border-orange-300  text-white  py-2 px-4 rounded"
+                class="bg-orange-300 duration-200  hover:scale-90 border border-solid border border-orange-300 hover:border-orange-300  text-white  py-2 px-4 rounded"
                 type="button"
               >
                 Send
