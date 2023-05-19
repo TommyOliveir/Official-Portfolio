@@ -7,7 +7,7 @@ function Hero() {
   
   return (
     <section className="w-full">
-      <div className=" flex flex-col sm:flex-row justify-end  ">
+      <div id="hero" className=" flex flex-col sm:flex-row justify-end pt-28 ">
         <div
           id="socials-image"
           className="w-full sm:flex items-center  sm:w-1/2"

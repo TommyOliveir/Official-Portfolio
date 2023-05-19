@@ -1,9 +1,18 @@
 import React from "react";
 import { Link, NavLink, Navigate } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 import { motion } from "framer-motion";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSquare } from '@fortawesome/free-solid-svg-icons'
-import { faHtml5, faCss3, faSquareJs, faReact, faSass, faGit, faGithub  } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSquare } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHtml5,
+  faCss3,
+  faSquareJs,
+  faReact,
+  faSass,
+  faGit,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Header() {
   const [rotate, setRotate] = React.useState(false);
@@ -20,7 +29,7 @@ export default function Header() {
   }
 
   return (
-    <header className="sm:items-center relative flex justify-between sm:p-8 bg-orange-300 w-full ">
+    <header className="sm:items-center fixed flex justify-between sm:p-8 bg-orange-300 w-full top-0 ">
       <Link
         className="p-4 sm:p-0 site-logo text-white tracking-wider font-bold"
         to="/"
@@ -30,7 +39,7 @@ export default function Header() {
           transition={{ duration: 1 }}
           onMouseEnter={() => setRotate(!rotate)}
         >
-          <FontAwesomeIcon icon={faSquare  } />
+          <FontAwesomeIcon icon={faSquare} />
         </motion.p>
       </Link>
       <div
@@ -48,30 +57,34 @@ export default function Header() {
           isOpenBurger ? "visible" : "invisible"
         }  sm:visible p-6 bg-orange-300 w-full absolute text-white  border border-red-400 gap-8 flex-col flex sm:flex-row sm:static sm:p-0 sm:justify-end sm:items-baseline  text-white  text-xl`}
       >
-        <NavLink
-          to="/"
-          style={({ isActive }) => (isActive ? activeStyles : null)}
+        <NavHashLink
+          to="#hero"
+          smooth
+          // style={({ isActive }) => (isActive ? activeStyles : null)}
         >
           Home
-        </NavLink>
-        <NavLink
-          to="/about"
-          style={({ isActive }) => (isActive ? activeStyles : null)}
+        </NavHashLink>
+        <NavHashLink
+          to="#about"
+          smooth
+          // style={({ isActive }) => (isActive ? activeStyles : null)}
         >
           About
-        </NavLink>
-        <NavLink
-          to="/skills"
-          style={({ isActive }) => (isActive ? activeStyles : null)}
+        </NavHashLink>
+        <NavHashLink
+          to="#skills"
+          smooth
+          // style={({ isActive }) => (isActive ? activeStyles : null)}
         >
           Skills
-        </NavLink>
-        <NavLink
-          to="/contact"
-          style={({ isActive }) => (isActive ? activeStyles : null)}
+        </NavHashLink>
+        <NavHashLink
+          to="#contact"
+          smooth
+          // style={({ isActive }) => (isActive ? activeStyles : null)}
         >
           Contact
-        </NavLink>
+        </NavHashLink>
       </nav>
     </header>
   );

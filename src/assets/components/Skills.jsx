@@ -9,7 +9,7 @@ import { faHtml5, faCss3, faSquareJs, faReact, faSass, faGit, faGithub  } from '
 function Skills() {
   return (
     <section className="">
-      <div className="py-16 skill-details items-center flex flex-col border-4 border-green-400 p-4">
+      <div id="skills" className="py-16 skill-details items-center flex flex-col border-4 border-green-400 p-4">
         <h2 className=" text-4xl font-bold ">Skills</h2>
         <p className="text-center text-base mt-4">I have a broad range of skills that will enable me to be a valuable member of your team. </p>
         <div className="mt-16 sm:flex sm:flex-wrap gap-8 justify-center w-2/3 m-auto grid grid-cols-2 border border-red-400 ">
