@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, NavLink, Navigate } from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
 import { motion } from "framer-motion";
@@ -28,8 +28,13 @@ export default function Header() {
     console.log("click");
   }
 
+  function setPathURL() {
+  
+  }
+
   return (
     <header className="sm:items-center fixed flex justify-between sm:p-8 bg-orange-300 w-full top-0 ">
+
       <Link
         className="p-4 sm:p-0 site-logo text-white tracking-wider font-bold"
         to="/"
@@ -57,9 +62,12 @@ export default function Header() {
           isOpenBurger ? "visible" : "invisible"
         }  sm:visible p-6 bg-orange-300 w-full absolute text-white  border border-red-400 gap-8 flex-col flex sm:flex-row sm:static sm:p-0 sm:justify-end sm:items-baseline  text-white  text-xl`}
       >
+       
+        {/* '''''''''''''''' */}
         <NavHashLink
           to="#hero"
           smooth
+          onClick={setPathURL}
           // style={({ isActive }) => (isActive ? activeStyles : null)}
         >
           Home
@@ -67,6 +75,7 @@ export default function Header() {
         <NavHashLink
           to="#about"
           smooth
+          onClick={setPathURL}
           // style={({ isActive }) => (isActive ? activeStyles : null)}
         >
           About
@@ -74,6 +83,7 @@ export default function Header() {
         <NavHashLink
           to="#skills"
           smooth
+          onClick={setPathURL}
           // style={({ isActive }) => (isActive ? activeStyles : null)}
         >
           Skills
@@ -81,6 +91,7 @@ export default function Header() {
         <NavHashLink
           to="#contact"
           smooth
+          onClick={setPathURL}
           // style={({ isActive }) => (isActive ? activeStyles : null)}
         >
           Contact
