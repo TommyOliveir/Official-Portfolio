@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Link, NavLink, Navigate } from "react-router-dom";
+import { Link, NavLink, Navigate, useLocation} from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,25 +16,25 @@ import {
 
 export default function Header() {
   const [rotate, setRotate] = React.useState(false);
-
   const [isOpenBurger, setIsOpenBurger] = React.useState(false);
+  const location = useLocation()
   const activeStyles = {
     fontWeight: "bold",
     textDecoration: "underline",
     color: "#161616",
   };
+
   function handleClickBurger() {
     setIsOpenBurger((prev) => !prev);
     console.log("click");
   }
 
-  function setPathURL() {
-  
-  }
+  const activeLink = location.state?.active || ""
+
+ 
 
   return (
     <header className="sm:items-center fixed flex justify-between sm:p-8 bg-orange-300 w-full top-0 ">
-
       <Link
         className="p-4 sm:p-0 site-logo text-white tracking-wider font-bold"
         to="/"
@@ -62,37 +62,41 @@ export default function Header() {
           isOpenBurger ? "visible" : "invisible"
         }  sm:visible p-6 bg-orange-300 w-full absolute text-white  border border-red-400 gap-8 flex-col flex sm:flex-row sm:static sm:p-0 sm:justify-end sm:items-baseline  text-white  text-xl`}
       >
-       
         {/* '''''''''''''''' */}
         <NavHashLink
+          // className={activeLink == "#hero" ? "currentActiveLink" : ""}
           to="#hero"
           smooth
-          onClick={setPathURL}
+          state={{ active: "#hero" }}
           // style={({ isActive }) => (isActive ? activeStyles : null)}
+          style={activeLink == "#hero" ?  activeStyles : null}
         >
           Home
         </NavHashLink>
         <NavHashLink
           to="#about"
           smooth
-          onClick={setPathURL}
+          state={{ active: "#about" }}
           // style={({ isActive }) => (isActive ? activeStyles : null)}
+          style={activeLink == "#about" ?  activeStyles : null}
         >
           About
         </NavHashLink>
         <NavHashLink
           to="#skills"
           smooth
-          onClick={setPathURL}
-          // style={({ isActive }) => (isActive ? activeStyles : null)}
+          state={{ active: "#skills" }}
+          //  style={({ isActive }) => (isActive ? activeStyles : null)}
+          style={activeLink == "#skills" ?  activeStyles : null}
         >
           Skills
         </NavHashLink>
         <NavHashLink
           to="#contact"
           smooth
-          onClick={setPathURL}
+          state={{ active: "#contact" }}
           // style={({ isActive }) => (isActive ? activeStyles : null)}
+          style={activeLink == "#contact" ?  activeStyles : null}
         >
           Contact
         </NavHashLink>
