@@ -6,6 +6,7 @@ import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
+import T from "../components/T";
 
 function HomeParalax() {
   return (
@@ -17,6 +18,7 @@ function HomeParalax() {
     <Projects/>
     <Contact/>
     <Footer/>
+    <T />
     </>
   );
 }
