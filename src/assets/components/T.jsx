@@ -1,36 +1,33 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-function T() {
-  const [text, setText] = useState("");
-  const [lineCount, setLineCount] = useState(0);
+const T = () => {
+  const [text, setText] = useState('');
 
   const handleTextChange = (event) => {
-    const value = event.target.value;
-    const lines = value.split("\n").length;
-    const lastLineLength = value.split("\n").pop().length;
-    const maxCharsPerLine = 20; // Adjust this value as needed
+    setText(event.target.value);
+  };
 
-    if (lastLineLength > maxCharsPerLine) {
-      setText(value + "\n");
-    } else {
-      setText(value);
+  const countNewLines = () => {
+    let newLineCount = 0;
+    if (text) {
+      const lines = text.split('\n');
+      lines.forEach((line) => {
+        newLineCount += Math.floor((line.length / event.target.cols) + 1);
+      });
     }
-
-    setLineCount(lines)
+    return newLineCount;
   };
 
   return (
-    <>
+    <div>
       <textarea
+      style={{height: "300px"}}
         value={text}
         onChange={handleTextChange}
-        rows={5}
-        cols={30}
-        style={{ resize: "none" }}
-      />{" "}
-      <p>{lineCount}</p>
-    </>
+      />
+      <p>New line count: {countNewLines()}</p>
+    </div>
   );
-}
+};
 
 export default T;
