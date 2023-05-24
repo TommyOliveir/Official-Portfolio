@@ -2,6 +2,7 @@
     color: red;
   }
   .textarea {
-    white-space: pre-wrap; /* Enable word wrapping */
-    overflow-y: auto; /* Add a scrollbar when necessary */
+   white-space: break-line; 
+    /* white-space: pre-line;  */
+ background: red;
   }
