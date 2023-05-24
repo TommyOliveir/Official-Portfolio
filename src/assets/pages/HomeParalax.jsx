@@ -8,6 +8,7 @@ import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 import T from "../components/T";
 
+
 function HomeParalax() {
   return (
     <>
@@ -19,6 +20,7 @@ function HomeParalax() {
     <Contact/>
     <Footer/>
     <T />
+   
     </>
   );
 }
