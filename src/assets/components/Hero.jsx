@@ -72,8 +72,8 @@ function Hero() {
                 <NavHashLink
                   className="block sm:inline-block xl:text-lg mt-12 py-2 px-4 rounded bg-white text-orange-300 border-solid border border-orange-300 sm:w-40 text-center
           hover:border-orange-300
-          hover:text-white
-          hover:bg-orange-300 duration-300"
+          hover:scale-90
+          duration-300"
           
                   to="#projects"
                   smooth
@@ -83,8 +83,8 @@ function Hero() {
                 <Link
                   className="block sm:inline-block sm:ml-8 xl:text-lg mt-8  py-2 px-4 rounded bg-orange-300 text-white border-solid border border-orange-300  sm:w-40 text-center
           hover:border-orange-300 
-          hover:text-orange-300
-          hover:bg-white duration-300"
+          hover:scale-90
+           duration-300"
           
                   to="/"
                 >
