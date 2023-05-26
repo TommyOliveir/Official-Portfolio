@@ -1,8 +1,9 @@
 .currentActiveLink{
     color: red;
   }
-  .textarea {
-   white-space: break-line; 
+  .textareacount {
+   white-space: pre-wrap; 
     /* white-space: pre-line;  */
  background: red;
+ margin: auto;
   }
