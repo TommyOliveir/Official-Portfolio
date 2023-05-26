@@ -14,8 +14,8 @@ function Contact() {
 
 
   return (
-    <section className="px-4 py-20 ">
-      <div id="contact" >
+    <section className="px-4 ">
+      <div id="contact" className="py-32 " >
       
         <form class="w-full max-w-lg mx-auto">
           <div class="flex flex-wrap -mx-3 mb-6">

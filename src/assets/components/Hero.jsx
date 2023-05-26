@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { NavHashLink } from "react-router-hash-link";
 
 function Hero() {
 
@@ -68,16 +69,17 @@ function Hero() {
                 Front-End React Developer
               </h2>
               <div className="links">
-                <Link
+                <NavHashLink
                   className="block sm:inline-block xl:text-lg mt-12 py-2 px-4 rounded bg-white text-orange-300 border-solid border border-orange-300 sm:w-40 text-center
           hover:border-orange-300
           hover:text-white
           hover:bg-orange-300 duration-300"
           
-                  to="/"
+                  to="#projects"
+                  smooth
                 >
                   See Projects
-                </Link>
+                </NavHashLink>
                 <Link
                   className="block sm:inline-block sm:ml-8 xl:text-lg mt-8  py-2 px-4 rounded bg-orange-300 text-white border-solid border border-orange-300  sm:w-40 text-center
           hover:border-orange-300 
