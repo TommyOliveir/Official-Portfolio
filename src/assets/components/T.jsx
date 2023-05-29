@@ -1,28 +1,9 @@
-import React, { useState, useRef, useEffect} from 'react';
+import React from 'react'
 
-const T = () => {
-  const [text, setText] = useState('');
-  const newlineCount = (text.match(/\n/g) || []).length;
-  const textareaRef = useRef(null);
-  const [isWidthFilled, setIsWidthFilled] = useState(true);
-
-  const handleChange = (event) => {
-    setText(event.target.value);
-
-   
-  };
-
-
-
-
-
+function T() {
   return (
-    <div>
-      <textarea wrap="hard" ref={textareaRef} className='textareacount' value={text} onChange={handleChange} style={{width: "200px", height: "100px"}}/>
-      <p>Newline count: {newlineCount}</p>
-      <p>{isWidthFilled ? 'Text width is filled' : 'Text width is not filled'}</p>
-    </div>
-  );
-};
+    <div>T</div>
+  )
+}
 
-export default T;
+export default T
