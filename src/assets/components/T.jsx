@@ -14,18 +14,22 @@ const T = () => {
     setRowscount(lineUsed);
 
     const content = textareaRef.current.innerHTML;
-    console.log('Content:', content);
+    console.log("Content:", content);
   };
 
   return (
     <>
-      <div contenteditable="true"
-      
-        ref={textareaRef}
-        // onChange={handleInputChange}
-        onInput={handleInputChange}
-        style={{ resize: "none", width: "200px" }}
-      />
+      {" "}
+      <div className="m-4 p-2 bg-orange-300  h-36" style={{  width: "400px", boxSizing: "content-box" }}>
+        <div className=" bg-orange-300 focus:outline-none" 
+          contenteditable="true"
+          ref={textareaRef}
+          // onChange={handleInputChange}
+          onInput={handleInputChange}
+          style={{ resize: "none", width: "400px" }}
+        />
+       
+      </div>
       rows{rowsCount}
     </>
   );
