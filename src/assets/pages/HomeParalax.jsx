@@ -6,7 +6,8 @@ import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
-import T from "../components/T";
+
+import TextArea from "../components/TextArea";
 
 
 function HomeParalax() {
@@ -19,7 +20,7 @@ function HomeParalax() {
     <Projects/>
     <Contact/>
     <Footer/>
-    <T />
+   <TextArea/>
    
     </>
   );

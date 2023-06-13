@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 
-const T = () => {
+const ContentEditable = () => {
   const textareaRef = useRef(null);
   const [rowsCount, setRowscount] = useState(0);
 
@@ -35,4 +35,4 @@ const T = () => {
   );
 };
 
-export default T;
+export default ContentEditable;
