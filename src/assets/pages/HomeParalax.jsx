@@ -7,7 +7,6 @@ import Projects from "../components/Projects";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 
-import TextArea from "../components/TextArea";
 
 
 function HomeParalax() {
@@ -20,7 +19,6 @@ function HomeParalax() {
     <Projects/>
     <Contact/>
     <Footer/>
-   <TextArea/>
    
     </>
   );
